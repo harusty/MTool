@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/marginBorder"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingLeft="@dimen/marginBorder"
+        android:paddingRight="@dimen/marginBorder">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textColor="@color/textTmp2"/>
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/shape_smallcorner_white_gray"
+            android:gravity="center_vertical"
+            android:hint="@string/inputName"
+            android:paddingLeft="@dimen/marginBorder"
+            android:singleLine="true"
+            android:textColorHint="@color/textHintColor"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingLeft="@dimen/marginBorder"
+        android:paddingRight="@dimen/marginBorder">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone"
+            android:textColor="@color/textTmp2"/>
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/shape_smallcorner_white_gray"
+            android:gravity="center_vertical"
+            android:hint="@string/inputPhone"
+            android:inputType="number"
+            android:paddingLeft="@dimen/marginBorder"
+            android:singleLine="true"
+            android:textColorHint="@color/textHintColor"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingLeft="@dimen/marginBorder"
+        android:paddingRight="@dimen/marginBorder">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sex"
+            android:textColor="@color/textTmp2"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="@dimen/marginBorder"
+                android:layout_weight="1"
+                android:background="@drawable/shape_smallcorner_white_gray"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp">
+
+                <com.zzkx.mtool.view.customview.RectChekBox
+                    android:id="@+id/cb_1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/def_white_circle_selector"
+                    android:padding="3.5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/man"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_smallcorner_white_gray"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp">
+
+                <com.zzkx.mtool.view.customview.RectChekBox
+                    android:id="@+id/cb_2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/def_white_circle_selector"
+                    android:padding="3.5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/woman"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingLeft="@dimen/marginBorder"
+        android:paddingRight="@dimen/marginBorder">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/locateArea"
+            android:textColor="@color/textTmp2"/>
+
+        <LinearLayout
+            android:id="@+id/layout_locate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_smallcorner_white_gray"
+            android:gravity="center"
+            android:minHeight="35dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="@dimen/marginBorder"
+            android:paddingRight="@dimen/marginBorder"
+            android:paddingTop="5dp">
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="16dp"
+                android:src="@mipmap/ic_locate_gray"/>
+
+            <TextView
+                android:id="@+id/go_locate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@string/goLocate"
+                android:textColor="@color/textHintColor"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:paddingLeft="@dimen/marginBorder"
+            android:paddingRight="@dimen/marginBorder">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/addDetail"
+                android:textColor="@color/textTmp2"/>
+
+            <EditText
+                android:id="@+id/et_add_detail"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/shape_smallcorner_white_gray"
+                android:gravity="center_vertical"
+                android:hint="@string/addDetailhint"
+                android:paddingLeft="@dimen/marginBorder"
+                android:singleLine="true"
+                android:textColorHint="@color/textHintColor"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="@dimen/marginBorder"
+            android:paddingTop="5dp">
+
+            <com.zzkx.mtool.view.customview.RectChekBox
+                android:id="@+id/cb_default_add"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/def_white_circle_selector"
+                android:padding="3.5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/defAdd"
+                android:textColor="@color/textHintColor"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/marginBorder"
+        android:layout_marginTop="@dimen/marginBorder">
+
+        <TextView
+            android:id="@+id/bt_delete"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="@dimen/marginBorder"
+            android:layout_weight="1"
+            android:background="@drawable/selector_gray_empty_corder"
+            android:gravity="center"
+            android:text="@string/delete"
+            android:textColor="@color/textHintColor"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/bt_add"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="@dimen/marginBorder"
+            android:layout_weight="1"
+            android:background="@drawable/selector_red_empty_corder"
+            android:gravity="center"
+            android:text="@string/add"
+            android:textColor="@color/colorPrimary"/>
+    </LinearLayout>
+
+</LinearLayout>

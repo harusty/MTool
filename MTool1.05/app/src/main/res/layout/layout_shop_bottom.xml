@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <View
+        android:id="@+id/transView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blackTrans"
+        android:visibility="gone"/>
+
+    <FrameLayout
+        android:id="@+id/cartLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/shopBottomLayoutHeigh"
+        android:visibility="gone">
+
+        <include
+            layout="@layout/layout_dialog_cart_option"/>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout_out"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/shopBottomLayoutHeigh"
+        android:layout_alignParentBottom="true"
+        android:background="@color/textTmp2">
+
+        <include layout="@layout/layout_dialog_cart_bottom"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout_in"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/shopBottomLayoutHeigh"
+        android:layout_alignParentBottom="true"
+        android:background="@color/textTmp2"
+        android:visibility="invisible">
+
+        <include layout="@layout/layout_dialog_cart_bottom"/>
+    </RelativeLayout>
+</RelativeLayout>

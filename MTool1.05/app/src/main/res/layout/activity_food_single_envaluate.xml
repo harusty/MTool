@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/marginBorder">
+
+        <com.zzkx.mtool.view.customview.RoundImageView
+            android:id="@+id/iv_food"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+
+        <TextView
+            android:id="@+id/tv_good_name"
+            android:textColor="@color/textTmp2"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_comment"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="@dimen/marginBorder"
+            android:layout_marginRight="@dimen/marginBorder"
+            android:layout_marginTop="@dimen/marginBorder"
+            android:background="@drawable/shape_smallcorner_white_gray"
+            android:gravity="top"
+            android:hint="请输入评价"
+            android:padding="10dp"
+            android:textColor="@color/textTmp2"
+            android:textColorHint="@color/textHintColor"
+            android:textSize="12sp"/>
+
+        <com.zzkx.mtool.view.customview.CategoryLayout
+            android:id="@+id/image_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/marginBorder"
+            android:layout_marginLeft="@dimen/marginBorder"
+            android:layout_marginRight="@dimen/marginBorder"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/iv_add"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@mipmap/ic_image_add"/>
+        </com.zzkx.mtool.view.customview.CategoryLayout>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+    <TextView
+        android:id="@+id/tv_save"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="@dimen/marginBorder"
+        android:layout_marginRight="@dimen/marginBorder"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_red_empty_corder"
+        android:gravity="center"
+        android:text="保存"
+        android:textColor="@color/colorPrimary"/>
+</LinearLayout>

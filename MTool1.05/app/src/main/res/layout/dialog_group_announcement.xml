@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_smallcorner_white"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:paddingBottom="10dp"
+            android:paddingLeft="@dimen/marginBorder"
+            android:paddingTop="10dp"
+            android:text="昵称"
+            android:textColor="@color/textTmp2"/>
+
+        <include layout="@layout/divider"/>
+
+        <EditText
+            android:id="@+id/et_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="@dimen/marginBorder"
+            android:layout_marginRight="@dimen/marginBorder"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_smallcorner_white_gray"
+            android:paddingBottom="10dp"
+            android:paddingLeft="@dimen/marginBorder"
+            android:paddingRight="@dimen/marginBorder"
+            android:paddingTop="10dp"
+            android:singleLine="true"
+            android:textColor="@color/textTmp2"
+            android:textSize="12sp"/>
+
+        <include layout="@layout/divider"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_back"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="返回"
+                android:textColor="@color/textTmp2"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/dividerColor"/>
+
+            <TextView
+                android:id="@+id/tv_confirm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/textTmp2"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

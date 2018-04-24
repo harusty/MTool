@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/marginBorder"
+            android:text="群公告"
+            android:textColor="@color/textTmp2"/>
+
+        <include layout="@layout/divider"/>
+
+        <TextView
+            android:id="@+id/tv_announcement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="10dp"
+            android:paddingLeft="@dimen/marginBorder"
+            android:paddingRight="@dimen/marginBorder"
+            android:paddingTop="10dp"
+            android:textColor="@color/textTmp2"/>
+
+        <include layout="@layout/divider"/>
+
+        <include
+            android:id="@+id/layout_group_detail_user"
+            layout="@layout/layout_group_detail_user"/>
+
+        <include
+            android:id="@+id/layout_group_detail_creater"
+            layout="@layout/layout_group_detail_creater"/>
+
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/marginBorder"
+            android:textColor="@color/textTmp2"/>
+
+        <include layout="@layout/divider"/>
+
+        <com.zzkx.mtool.view.customview.ExpandGridView
+            android:id="@+id/grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:horizontalSpacing="10dp"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="4"
+            android:paddingBottom="10dp"
+            android:paddingLeft="@dimen/marginBorder"
+            android:paddingRight="@dimen/marginBorder"
+            android:paddingTop="10dp"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp"/>
+    </LinearLayout>
+</ScrollView>

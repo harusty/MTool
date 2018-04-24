@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_friend"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/def_white_selector"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_marginLeft="@dimen/marginBorder"
+            android:src="@mipmap/ic_contact_friend"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="好  友"
+            android:textColor="@color/textTmp2"/>
+
+        <View
+            android:layout_width="7dp"
+            android:layout_height="13dp"
+            android:layout_marginRight="@dimen/marginBorder"
+            android:background="@mipmap/ic_arr_gray_right"
+            />
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+    <LinearLayout
+        android:id="@+id/layout_attention"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/def_white_selector"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_marginLeft="@dimen/marginBorder"
+            android:src="@mipmap/ic_contact_heart"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="关  注"
+            android:textColor="@color/textTmp2"/>
+
+        <View
+            android:layout_width="7dp"
+            android:layout_height="13dp"
+            android:layout_marginRight="@dimen/marginBorder"
+            android:background="@mipmap/ic_arr_gray_right"
+            />
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+    <LinearLayout
+        android:id="@+id/layout_group"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/def_white_selector"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="@dimen/marginBorder"
+            android:src="@mipmap/ic_18"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="从群聊导入"
+            android:textColor="@color/textTmp2"/>
+
+        <View
+            android:layout_width="7dp"
+            android:layout_height="13dp"
+            android:layout_marginRight="@dimen/marginBorder"
+            android:background="@mipmap/ic_arr_gray_right"
+            />
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+</LinearLayout>

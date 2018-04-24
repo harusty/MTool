@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingLeft="@dimen/marginBorder"
+        android:paddingRight="@dimen/marginBorder">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="禁止向我发言"
+            android:textColor="@color/textTmp2"/>
+
+        <com.zzkx.mtool.view.customview.CustomSwitch
+            android:id="@+id/sw_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingLeft="@dimen/marginBorder"
+        android:paddingRight="@dimen/marginBorder">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="不让TA看我的动态"
+            android:textColor="@color/textTmp2"/>
+
+        <com.zzkx.mtool.view.customview.CustomSwitch
+            android:id="@+id/sw_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingLeft="@dimen/marginBorder"
+        android:paddingRight="@dimen/marginBorder">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="不看他的动态"
+            android:textColor="@color/textTmp2"/>
+
+        <com.zzkx.mtool.view.customview.CustomSwitch
+            android:id="@+id/sw_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingLeft="@dimen/marginBorder"
+        android:paddingRight="@dimen/marginBorder">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="屏蔽该用户"
+            android:textColor="@color/textTmp2"/>
+
+        <com.zzkx.mtool.view.customview.CustomSwitch
+
+            android:id="@+id/sw_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+    <TextView
+        android:id="@+id/layout_clear_chat"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="@dimen/marginBorder"
+        android:background="@drawable/def_white_selector"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/marginBorder"
+        android:text="清空聊天记录"
+        android:textColor="@color/textHintColor"/>
+
+    <include layout="@layout/divider"/>
+</LinearLayout>

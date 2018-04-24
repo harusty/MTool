@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginBorder"
+            android:layout_weight="1"
+            android:text="关闭提示音"
+            android:textColor="@color/textTmp2"
+            android:textColorHighlight="@color/textTmp2"/>
+
+        <com.zzkx.mtool.view.customview.CustomSwitch
+            android:id="@+id/switch_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/marginBorder"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+    <TextView
+        android:id="@+id/tv_out"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/def_white_selector"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/marginBorder"
+        android:text="退出该群"
+        android:textColor="@color/textTmp2"/>
+
+    <include layout="@layout/divider"/>
+
+    <TextView
+        android:id="@+id/tv_report"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/def_white_selector"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/marginBorder"
+        android:text="举报该群"
+        android:textColor="@color/textTmp2"/>
+
+    <include layout="@layout/divider"/>
+</LinearLayout>

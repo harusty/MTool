@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+
+    <com.zzkx.mtool.view.customview.scrollablelayout.ScrollableLayout
+        android:id="@+id/scrolable_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_cart_top"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.astuetz.PagerSlidingTabStrip
+                android:id="@+id/tab_strip"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                app:pstsDividerColor="@color/dividerColor"
+                app:pstsDividerPadding="12dp"
+                app:pstsDividerWidth="1dp"
+                app:pstsIndicatorColor="@color/blue"
+                app:pstsIndicatorHeight="3dp"
+                app:pstsIndicatorMarginLeftRight="20dp"
+                app:pstsShouldExpand="true"
+                app:pstsTabTextColor="@color/textTmp2"
+                app:pstsTabTextSize="14sp"
+                app:pstsUnderlineColor="@color/white"/>
+
+            <include layout="@layout/divider"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"/>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="55dp"
+                android:background="@color/white"/>
+        </LinearLayout>
+    </com.zzkx.mtool.view.customview.scrollablelayout.ScrollableLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/windowBg">
+
+        <TextView
+            android:id="@+id/tv_submit"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/marginBorder"
+            android:layout_marginRight="@dimen/marginBorder"
+            android:background="@drawable/selector_red_empty_corder"
+            android:gravity="center"
+            android:text="@string/submit_order"
+            android:textColor="@color/colorPrimary"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+
+        <include
+            android:id="@+id/state_layout"
+            layout="@layout/item_state"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/marginBorder"
+            android:paddingRight="@dimen/marginBorder">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="最近赞过的人"
+                    android:textColor="@color/textTmp2"/>
+
+                <ImageView
+                    android:id="@+id/iv_dot"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/def_white_circle_selector"
+                    android:paddingBottom="12.5dp"
+                    android:paddingLeft="5.5dp"
+                    android:paddingRight="5.5dp"
+                    android:paddingTop="12.5dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_dot_main"/>
+            </LinearLayout>
+
+            <include layout="@layout/divider"/>
+
+            <LinearLayout
+                android:id="@+id/header_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:weightSum="7">
+
+                <com.zzkx.mtool.view.customview.RoundImageView1_1W
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"/>
+
+                <com.zzkx.mtool.view.customview.RoundImageView1_1W
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"/>
+
+                <com.zzkx.mtool.view.customview.RoundImageView1_1W
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"/>
+
+                <com.zzkx.mtool.view.customview.RoundImageView1_1W
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"/>
+
+                <com.zzkx.mtool.view.customview.RoundImageView1_1W
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"/>
+
+                <com.zzkx.mtool.view.customview.RoundImageView1_1W
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"/>
+
+                <com.zzkx.mtool.view.customview.RoundImageView1_1W
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/divider"/>
+
+    </LinearLayout>
+</ScrollView>

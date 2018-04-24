@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="event" type="id"/>
+    <item name="search" type="id"/>
+    <item name="basket" type="id"/>
+    <item name="cart" type="id"/>
+    <item name="message" type="id"/>
+    <item name="mine" type="id"/>
+    <item name="scan" type="id"/>
+    <item name="bean" type="id"/>
+    <item name="tag" type="id"/>
+    <item name="child_index" type="id"/>
+    <item name="parent_index" type="id"/>
+</resources>

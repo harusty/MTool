@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_shop"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/def_white_selector"
+        android:gravity="center"
+        android:paddingLeft="@dimen/marginBorder"
+        android:paddingRight="@dimen/marginBorder">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:padding="1dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_shop"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginBorder"
+            android:layout_weight="1"
+            android:text="关注的店铺"
+            android:textColor="@color/textTmp2"/>
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="13dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_arr_gray_right"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+    <LinearLayout
+        android:id="@+id/layout_user"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/def_white_selector"
+        android:gravity="center"
+        android:paddingLeft="@dimen/marginBorder"
+        android:paddingRight="@dimen/marginBorder">
+
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="19dp"
+            android:paddingLeft="1.5dp"
+            android:paddingRight="1.5dp"
+            android:src="@mipmap/ic_user_info1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginBorder"
+            android:layout_weight="1"
+            android:text="关注的用户"
+            android:textColor="@color/textTmp2"/>
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="13dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_arr_gray_right"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+</LinearLayout>

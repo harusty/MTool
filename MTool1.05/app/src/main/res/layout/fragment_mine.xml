@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/layout_supposed"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/def_white_selector"
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:src="@mipmap/ic_mine_good"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/my_good"
+            android:textColor="@color/textTmp2"/>
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="13dp"
+            android:src="@mipmap/ic_arr_gray_right"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+    <LinearLayout
+        android:id="@+id/lo_my_state"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/def_white_selector"
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="0.5dp"
+            android:paddingRight="0.5dp"
+            android:src="@mipmap/ic_mine_state"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/my_active"
+            android:textColor="@color/textTmp2"/>
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="13dp"
+            android:src="@mipmap/ic_arr_gray_right"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+    <LinearLayout
+        android:id="@+id/layout_wallete"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/def_white_selector"
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:src="@mipmap/ic_mine_wallet"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/wallete"
+            android:textColor="@color/textTmp2"/>
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="13dp"
+            android:src="@mipmap/ic_arr_gray_right"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+    <LinearLayout
+        android:id="@+id/layout_order_history"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/def_white_selector"
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:src="@mipmap/ic_mine_order"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/history_order"
+            android:textColor="@color/textTmp2"/>
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="13dp"
+            android:src="@mipmap/ic_arr_gray_right"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+    <LinearLayout
+        android:id="@+id/layout_collect"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/def_white_selector"
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/ic_star_gray_empty"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/my_collect"
+            android:textColor="@color/textTmp2"/>
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="13dp"
+            android:src="@mipmap/ic_arr_gray_right"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+    <LinearLayout
+        android:id="@+id/layout_be_partner"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/def_white_selector"
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="0.5dp"
+            android:paddingRight="0.5dp"
+            android:src="@mipmap/ic_mine_be_partner"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/wannaBePartner"
+            android:textColor="@color/textTmp2"/>
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="13dp"
+            android:src="@mipmap/ic_arr_gray_right"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+    <LinearLayout
+        android:id="@+id/layout_service"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/def_white_selector"
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/ic_mine_kefu"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sercCenter"
+            android:textColor="@color/textTmp2"/>
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="13dp"
+            android:src="@mipmap/ic_arr_gray_right"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+</LinearLayout>

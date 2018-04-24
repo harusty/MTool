@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/marginBorder">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="支付方式"
+                android:textColor="@color/textTmp2"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/pay_ali"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <RadioButton
+                        android:id="@+id/rb_ali"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"/>
+
+                    <View
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:background="@mipmap/ic_40"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:text="支付宝支付"
+                        android:textColor="@color/textTmp2"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pay_wechat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center">
+
+                    <RadioButton
+                        android:id="@+id/rb_wechat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"/>
+
+                    <View
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:background="@mipmap/ic_41"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:text="微信支付"
+                        android:textColor="@color/textTmp2"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/divider"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginBorder"
+            android:layout_marginTop="@dimen/marginBorder"
+            android:text="充值金额"
+            android:textColor="@color/textTmp2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="@dimen/marginBorder"
+            android:layout_marginTop="@dimen/marginBorder">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/et_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@color/transparent"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="36sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="@dimen/marginBorder"
+            android:layout_marginRight="@dimen/marginBorder"
+            android:background="@color/dividerColor"
+            />
+
+        <include layout="@layout/divider"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_next"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="@dimen/marginBorder"
+        android:layout_marginRight="@dimen/marginBorder"
+        android:layout_marginTop="@dimen/marginBorder"
+        android:background="@drawable/def_red_corner_selector"
+        android:gravity="center"
+        android:text="下一步"
+        android:textColor="@color/white"/>
+</LinearLayout>

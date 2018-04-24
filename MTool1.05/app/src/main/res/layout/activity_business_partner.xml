@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="19dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="@dimen/marginBorder"
+            android:src="@mipmap/ic_31"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="商户入驻"
+            android:textColor="@color/textTmp2"/>
+
+        <TextView
+            android:id="@+id/tv_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/marginBorder"
+            android:background="@drawable/shape_red_empty_corner"
+            android:paddingBottom="10dp"
+            android:paddingLeft="@dimen/marginBorder"
+            android:paddingRight="@dimen/marginBorder"
+            android:paddingTop="10dp"
+            android:text="立即申请"
+            android:textColor="@color/colorPrimary"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="19dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="@dimen/marginBorder"
+            android:src="@mipmap/ic_32"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="服务商入驻"
+            android:textColor="@color/textTmp2"/>
+
+        <TextView
+            android:id="@+id/tv_ruzhu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/marginBorder"
+            android:background="@drawable/shape_red_empty_corner"
+            android:paddingBottom="10dp"
+            android:paddingLeft="@dimen/marginBorder"
+            android:paddingRight="@dimen/marginBorder"
+            android:paddingTop="10dp"
+            android:text="立即申请"
+            android:textColor="@color/colorPrimary"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="19dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="@dimen/marginBorder"
+            android:src="@mipmap/ic_33"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="城市代理商加盟"
+            android:textColor="@color/textTmp2"/>
+
+        <TextView
+            android:id="@+id/tv_daili"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/marginBorder"
+            android:background="@drawable/shape_red_empty_corner"
+            android:paddingBottom="10dp"
+            android:paddingLeft="@dimen/marginBorder"
+            android:paddingRight="@dimen/marginBorder"
+            android:paddingTop="10dp"
+            android:text="立即申请"
+            android:textColor="@color/colorPrimary"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="19dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="@dimen/marginBorder"
+            android:src="@mipmap/ic_34"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="配送商入驻"
+            android:textColor="@color/textTmp2"/>
+
+        <TextView
+            android:id="@+id/tv_provider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/marginBorder"
+            android:background="@drawable/shape_red_empty_corner"
+            android:paddingBottom="10dp"
+            android:paddingLeft="@dimen/marginBorder"
+            android:paddingRight="@dimen/marginBorder"
+            android:paddingTop="10dp"
+            android:text="立即申请"
+            android:textColor="@color/colorPrimary"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="19dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="@dimen/marginBorder"
+            android:src="@mipmap/ic_35"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="媒体公关合作"
+                android:textColor="@color/textTmp2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="32332@qq.com"
+                android:textColor="@color/textHintColor"
+                android:textSize="12sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="19dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="@dimen/marginBorder"
+            android:src="@mipmap/ic_36"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="品牌广告合作"
+                android:textColor="@color/textTmp2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="32332@qq.com"
+                android:textColor="@color/textHintColor"
+                android:textSize="12sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="19dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="@dimen/marginBorder"
+            android:src="@mipmap/ic_37"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="其他合作"
+                android:textColor="@color/textTmp2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="32332@qq.com"
+                android:textColor="@color/textHintColor"
+                android:textSize="12sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+</LinearLayout>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/acc_safety"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/def_white_selector"
+        android:gravity="center"
+        android:onClick="goQrCard"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/ic_mine_safety"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/ad_safety"
+            android:textColor="@color/textTmp2"/>
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="13dp"
+            android:src="@mipmap/ic_arr_gray_right"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+    <LinearLayout
+        android:id="@+id/layout_addInfo"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/def_white_selector"
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <ImageView
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:layout_width="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/ic_mine_receive"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/addIfo"
+            android:textColor="@color/textTmp2"/>
+
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="13dp"
+            android:src="@mipmap/ic_arr_gray_right"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+    <LinearLayout
+        android:id="@+id/layout_privacy"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/def_white_selector"
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <ImageView
+            android:paddingLeft="0.5dp"
+            android:paddingRight="0.5dp"
+            android:layout_width="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/ic_mine_privacy"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/privacySetting"
+            android:textColor="@color/textTmp2"/>
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="13dp"
+            android:src="@mipmap/ic_arr_gray_right"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+    <LinearLayout
+        android:id="@+id/layout_notification"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/def_white_selector"
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <ImageView
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:layout_width="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/ic_mine_notify"/>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/notifySetting"
+            android:textColor="@color/textTmp2"/>
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="13dp"
+            android:src="@mipmap/ic_arr_gray_right"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+    <LinearLayout
+        android:id="@+id/setting_normal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/def_white_selector"
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="0.5dp"
+            android:paddingRight="0.5dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/ic_mine_normal"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/normalSetting"
+            android:textColor="@color/textTmp2"/>
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="13dp"
+            android:src="@mipmap/ic_arr_gray_right"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+    <LinearLayout
+        android:id="@+id/layout_about"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/def_white_selector"
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <ImageView
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:layout_width="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/ic_mine_about"/>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/about"
+            android:textColor="@color/textTmp2"/>
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="13dp"
+            android:src="@mipmap/ic_arr_gray_right"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+</LinearLayout>

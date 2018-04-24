@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/shape_smallcorner_white"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginBorder"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="头  像"
+                android:textColor="@color/textTmp2"/>
+
+            <include layout="@layout/divider"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_camera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginBorder"
+            android:paddingBottom="@dimen/marginBorder"
+            android:paddingTop="@dimen/marginBorder"
+            android:text="拍  照"
+            android:textColor="@color/textTmp2"/>
+
+        <include layout="@layout/divider"/>
+
+        <TextView
+            android:id="@+id/tv_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginBorder"
+            android:paddingBottom="@dimen/marginBorder"
+            android:paddingTop="@dimen/marginBorder"
+            android:text="从相册中选择的"
+            android:textColor="@color/textTmp2"/>
+
+        <include layout="@layout/divider"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginBorder"
+            android:paddingBottom="@dimen/marginBorder"
+            android:paddingTop="@dimen/marginBorder"
+            android:text="视频"
+            android:textColor="@color/textTmp2"/>
+
+        <include layout="@layout/divider"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <TextView
+                android:id="@+id/tv_back"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="返回"
+                android:textColor="@color/textTmp2"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/dividerColor"/>
+
+            <TextView
+                android:id="@+id/tv_confirm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/textTmp2"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

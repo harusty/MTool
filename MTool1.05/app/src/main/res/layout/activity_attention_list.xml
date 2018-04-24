@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/lv_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent"
+            android:overScrollMode="never"/>
+
+        <View
+            android:id="@+id/icon_red_arrow"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="56dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="27.5dp"
+            android:background="@mipmap/red_arrow"
+            android:src="@mipmap/ic_eye"/>
+    </RelativeLayout>
+
+    <include layout="@layout/divider"/>
+
+    <HorizontalScrollView
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <LinearLayout
+            android:id="@+id/header_container"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingLeft="@dimen/marginBorder"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp">
+
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

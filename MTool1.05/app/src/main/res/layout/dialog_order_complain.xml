@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_smallcorner_white_gray"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="@dimen/marginBorder"
+            android:layout_marginTop="10dp"
+            android:text="投诉"
+            android:textColor="@color/textTmp2"/>
+
+        <include layout="@layout/divider"/>
+
+        <EditText
+            android:id="@+id/et_input"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="@dimen/marginBorder"
+            android:layout_marginRight="@dimen/marginBorder"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_smallcorner_white_gray"
+            android:gravity="top"
+            android:hint="请输入投诉内容"
+            android:padding="10dp"
+            android:textColorHint="@color/textHintColor"
+            android:textSize="14sp"/>
+
+        <include layout="@layout/divider"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/def_white_small_corner_selector"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/textTmp2"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/dividerColor"/>
+
+            <TextView
+                android:id="@+id/tv_confirm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/def_white_small_corner_selector"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/textTmp2"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

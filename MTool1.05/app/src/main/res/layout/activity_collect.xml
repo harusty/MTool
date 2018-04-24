@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_shop_collect"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/def_white_selector"
+        android:gravity="center"
+        android:paddingLeft="@dimen/marginBorder"
+        android:paddingRight="@dimen/marginBorder">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@mipmap/ic_shop_light"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="店  铺"
+            android:textColor="@color/textTmp2"/>
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="13dp"
+            android:src="@mipmap/ic_arr_gray_right"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+    <LinearLayout
+        android:id="@+id/layout_good_collect"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/def_white_selector"
+        android:gravity="center"
+        android:paddingLeft="@dimen/marginBorder"
+        android:paddingRight="@dimen/marginBorder">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@mipmap/ic_goods"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="商  品"
+            android:textColor="@color/textTmp2"/>
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="13dp"
+            android:src="@mipmap/ic_arr_gray_right"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+    <LinearLayout
+        android:id="@+id/layout_state_collect"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/def_white_selector"
+        android:gravity="center"
+        android:paddingLeft="@dimen/marginBorder"
+        android:paddingRight="@dimen/marginBorder">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@mipmap/ic_msg_light_gray_2"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="动  态"
+            android:textColor="@color/textTmp2"/>
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="13dp"
+            android:src="@mipmap/ic_arr_gray_right"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+</LinearLayout>

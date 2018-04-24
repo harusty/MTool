@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_user_header"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/def_white_selector"
+            android:gravity="center"
+            android:paddingLeft="@dimen/marginBorder"
+            android:paddingRight="@dimen/marginBorder">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/ic_user_info1"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="头  像"
+                android:textColor="@color/textTmp2"/>
+
+            <com.zzkx.mtool.view.customview.RoundImageView1_1W
+                android:id="@+id/iv_user_header"
+                android:scaleType="centerCrop"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <ImageView
+                android:id="@+id/iv_edit_header"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/def_white_circle_selector"
+                android:padding="6dp"
+                android:src="@mipmap/ic_edit"/>
+        </LinearLayout>
+
+        <include layout="@layout/divider"/>
+
+        <LinearLayout
+            android:id="@+id/layout_user_nick"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/def_white_selector"
+            android:gravity="center"
+            android:paddingLeft="@dimen/marginBorder"
+            android:paddingRight="@dimen/marginBorder">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/ic_user_info2"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="昵  称"
+                android:textColor="@color/textTmp2"/>
+
+            <TextView
+                android:id="@+id/tv_nick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未设置"
+                android:textColor="@color/textHintColor"/>
+
+            <ImageView
+                android:id="@+id/iv_edit_nick"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/def_white_circle_selector"
+                android:padding="6dp"
+                android:src="@mipmap/ic_edit"/>
+        </LinearLayout>
+
+        <include layout="@layout/divider"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/def_white_selector"
+            android:gravity="center"
+            android:paddingLeft="@dimen/marginBorder"
+            android:paddingRight="@dimen/marginBorder">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/ic_user_info3"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="性  别"
+                android:textColor="@color/textTmp"/>
+
+            <TextView
+                android:id="@+id/tv_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未设置"
+                android:textColor="@color/textHintColor"/>
+
+            <ImageView
+                android:id="@+id/iv_edit_sex"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/def_white_circle_selector"
+                android:padding="6dp"
+                android:src="@mipmap/ic_edit"/>
+        </LinearLayout>
+
+        <include layout="@layout/divider"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/def_white_selector"
+            android:gravity="center"
+            android:paddingLeft="@dimen/marginBorder"
+            android:paddingRight="@dimen/marginBorder">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/ic_user_info4"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="生  日"
+                android:textColor="@color/textTmp2"/>
+
+            <TextView
+                android:id="@+id/tv_birth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未设置"
+                android:textColor="@color/textHintColor"/>
+
+            <ImageView
+                android:id="@+id/iv_edit_birth"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/def_white_circle_selector"
+                android:padding="6dp"
+                android:src="@mipmap/ic_edit"/>
+        </LinearLayout>
+
+        <include layout="@layout/divider"/>
+
+        <LinearLayout
+            android:id="@+id/layout_intro"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/def_white_selector"
+            android:gravity="center"
+            android:paddingLeft="@dimen/marginBorder"
+            android:paddingRight="@dimen/marginBorder">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/ic_user_info5"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="个人简介"
+                android:textColor="@color/textTmp2"/>
+
+            <TextView
+                android:id="@+id/tv_intro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLength="10"
+                android:text="未设置"
+                android:textColor="@color/textHintColor"/>
+
+            <ImageView
+                android:id="@+id/iv_edit_intro"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/def_white_circle_selector"
+                android:padding="6dp"
+                android:src="@mipmap/ic_edit"/>
+
+        </LinearLayout>
+
+        <include layout="@layout/divider"/>
+
+        <LinearLayout
+            android:id="@+id/layout_user_qr"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/def_white_selector"
+            android:gravity="center"
+            android:paddingLeft="@dimen/marginBorder"
+            android:paddingRight="@dimen/marginBorder">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/ic_user_info6"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="二维码"
+                android:textColor="@color/textTmp2"/>
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:padding="6dp"
+                android:src="@mipmap/ic_edit"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <include layout="@layout/divider"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/def_white_selector"
+            android:gravity="center"
+            android:paddingLeft="@dimen/marginBorder"
+            android:paddingRight="@dimen/marginBorder">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/ic_user_info7"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="地  区"
+                android:textColor="@color/textTmp2"/>
+
+            <TextView
+                android:id="@+id/tv_locate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未设置"
+                android:textColor="@color/textHintColor"/>
+
+            <ImageView
+                android:id="@+id/iv_edit_locate"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/def_white_circle_selector"
+                android:padding="6dp"
+                android:src="@mipmap/ic_edit"/>
+        </LinearLayout>
+
+        <include layout="@layout/divider"/>
+    </LinearLayout>
+</LinearLayout>

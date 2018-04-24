@@ -1,0 +1,136 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.mob.sdk'
+
+def releaseTime() {
+    return new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("UTC"))
+}
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+    defaultConfig {
+        applicationId "com.zzkx.mtool"
+        minSdkVersion 16
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    signingConfigs {
+        myConfig {
+            keyAlias 'rrzg'
+            keyPassword '123456'
+            storeFile file('D:/WORK/keystore.jks')
+            storePassword '123456'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable false
+            jniDebuggable false
+            signingConfig signingConfigs.myConfig
+        }
+        debug {
+            signingConfig signingConfigs.myConfig
+        }
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            def fileName
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                if (variant.buildType.name.equals('release')) {
+                    fileName = "MTool_${defaultConfig.versionName}_RELEASE_${releaseTime()}.apk"
+                } else if (variant.buildType.name.equals('debug')) {
+                    fileName = "MTool_DEBUG_${releaseTime()}.apk"
+                }
+                output.outputFile = new File(outputFile.parent, fileName)
+            }
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+
+    }
+    repositories {
+        flatDir { dirs 'libs' }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    MobSDK {
+        appKey "2389a11dc22bd"
+        appSecret "79b33be617a9c8899833647d07f896d3"
+
+        ShareSDK {
+            //平台配置信息
+            devInfo {
+                SinaWeibo {
+                    appKey "1350844836"
+                    appSecret "1b2bf511f0589ed7a4db1bd9861708ad"
+                    callbackUri "http://www.sharesdk.cn"
+                    shareByAppClient true
+                }
+                Wechat {
+                    appId "wx0104661b1a8f102d"
+                    appSecret "fb0aa565282b27bf075e7ef2f1d3bc37"
+                    shareByAppClient true
+                }
+                WechatMoments {
+                    appId "wx0104661b1a8f102d"
+                    appSecret "fb0aa565282b27bf075e7ef2f1d3bc37"
+                    shareByAppClient true
+                }
+                QQ {
+                    appId "1106658944"
+                    appKey "Du2aeHcXeDN8K62l"
+                    shareByAppClient true
+                }
+                QZone {
+                    appId "1106658944"
+                    appKey "Du2aeHcXeDN8K62l"
+                    shareByAppClient true
+                }
+            }
+        }
+
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    //高德
+    compile fileTree(include: '*.jar', dir: 'libs')
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.6.0'
+    compile 'com.jakewharton:butterknife:8.7.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.7.0'
+    //    compile 'com.github.bumptech.glide:glide:3.8.0'
+    //圆角布局
+    compile 'com.github.AriesHoo:RadiusView:1.1.0'
+    //圆角Imageview
+    //    compile 'com.github.siyamed:android-shape-imageview:0.9.3@aar'
+    compile 'se.emilsjolander:stickylistheaders:2.7.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'cc.tracyzhang:PagerSlidingTabStrip:1.1.1'
+    compile project(':easeui')
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.parse:parse-android:1.13.1'
+    compile files('libs/libammsdk.jar')
+    compile 'com.zhy:okhttputils:2.6.2'
+    compile project(':lib-zxing')
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile(name: 'AlivcPlayer', ext: 'aar')
+}

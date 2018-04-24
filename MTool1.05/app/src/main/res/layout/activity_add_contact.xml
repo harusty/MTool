@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="@dimen/marginBorder"
+        android:layout_marginRight="@dimen/marginBorder"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_bigcorner_white_gray"
+        android:gravity="center_vertical"
+        android:hint="请输入好友昵称"
+        android:imeOptions="actionSearch"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:textColorHint="@color/textHintColor"
+        android:textSize="12sp"/>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/marginBorder"
+        android:id="@+id/layout_contact"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <com.zzkx.mtool.view.customview.RoundImageView
+            android:id="@+id/iv_head"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="@dimen/marginBorder"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:textColor="@color/textTmp2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/marginBorder"
+            android:background="@drawable/shape_smallcorner_white_gray"
+            android:gravity="center"
+            android:onClick="addContact"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:text="添加关注"
+            android:textColor="@color/textTmp2"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingBottom="20dp"
+              android:paddingTop="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/def_white_selector"
+        android:gravity="center_vertical">
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="19dp"
+            android:layout_marginLeft="@dimen/marginBorder"
+            android:background="@mipmap/ic_18"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="创建群聊"
+            android:textColor="@color/textTmp2"/>
+
+        <View
+            android:layout_width="7dp"
+            android:layout_height="13dp"
+            android:layout_marginRight="@dimen/marginBorder"
+            android:background="@mipmap/ic_arr_gray_right"/>
+    </LinearLayout>
+</LinearLayout>

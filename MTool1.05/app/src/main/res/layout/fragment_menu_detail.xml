@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/scroll_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="@dimen/marginBorder"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/marginBorder"
+            android:textColor="@color/textTmp2"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:background="@color/white">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"/>
+
+            <com.zzkx.mtool.view.customview.indicator.CirclePageIndicator
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                app:fillColor="@color/colorPrimary"
+                app:pageColor="#CCCCCC"
+                app:radius="5dp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/option_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginBorder"
+            android:orientation="vertical">
+
+            <include layout="@layout/item_menu_option"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_menu_intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginBorder"
+            android:background="@color/white"
+            android:paddingBottom="10dp"
+            android:paddingLeft="@dimen/marginBorder"
+            android:paddingRight="@dimen/marginBorder"
+            android:paddingTop="10dp"
+            android:textColor="@color/textTmp2"
+            android:textSize="10sp"/>
+
+        <include layout="@layout/divider"/>
+
+    </LinearLayout>
+</ScrollView>

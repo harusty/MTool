@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/marginBorder">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="历史搜索"
+                android:textColor="@color/textTmp2"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/iv_tras_can"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="@dimen/marginBorder"
+                android:padding="7.5dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_tras_can"/>
+
+            <ImageView
+                android:id="@+id/ic_menu_dot"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:paddingBottom="12.5dp"
+                android:paddingLeft="5.5dp"
+                android:paddingRight="5.5dp"
+                android:paddingTop="12.5dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_menu_dot"/>
+        </LinearLayout>
+
+        <include layout="@layout/divider"/>
+
+        <com.zzkx.mtool.view.customview.CategoryLayout
+            android:id="@+id/history_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="@dimen/marginBorder"
+            android:paddingRight="@dimen/marginBorder"
+            android:paddingTop="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/hot_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginLeft="@dimen/marginBorder"
+                android:gravity="center"
+                android:text="热门搜索"
+                android:textColor="@color/textTmp2"
+                android:textStyle="bold"/>
+
+            <include layout="@layout/divider"/>
+
+            <com.zzkx.mtool.view.customview.CategoryLayout
+                android:id="@+id/hot_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="@dimen/marginBorder"
+                android:paddingRight="@dimen/marginBorder"
+                android:paddingTop="10dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

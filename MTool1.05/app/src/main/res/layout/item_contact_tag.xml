@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginBorder"
+            android:layout_weight="1"
+            android:textColor="@color/textTmp2"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ic_edit"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/def_white_circle_selector"
+                android:padding="6dp"
+                android:src="@mipmap/ic_edit"
+                android:visibility="gone"/>
+
+            <View
+                android:id="@+id/ic_arrow"
+                android:layout_width="7dp"
+                android:layout_height="13dp"
+                android:layout_marginRight="@dimen/marginBorder"
+                android:background="@mipmap/ic_arr_gray_right"/>
+
+            <com.zzkx.mtool.view.customview.RectChekBox
+                android:id="@+id/checkbox"
+                android:layout_marginRight="@dimen/marginBorder"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+</LinearLayout>

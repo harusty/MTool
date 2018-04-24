@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingLeft="@dimen/marginBorder"
+              android:paddingRight="@dimen/marginBorder">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机："
+            android:textColor="@color/textTmp2"
+            />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="right|center_vertical"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textColor="@color/textTmp2"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="35dp"
+            android:paddingBottom="11dp"
+            android:paddingTop="11dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_arr_gray_right"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录密码："
+            android:textColor="@color/textTmp2"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:id="@+id/tv_status"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:text="未设置"
+            android:textColor="@color/textHintColor"/>
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="35dp"
+            android:paddingBottom="11dp"
+            android:paddingTop="11dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_arr_gray_right"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+    <TextView
+        android:id="@+id/tv_log_out"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/shape_smallcorner_white_gray"
+        android:gravity="center"
+        android:text="退出登录"
+        android:textColor="@color/textHintColor"/>
+
+</LinearLayout>

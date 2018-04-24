@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_smallcorner_white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/def_white_small_corner_selector"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="copy">
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="17dp"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/ic_61"/>
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginBorder"
+                android:text="复  制"
+                android:textColor="@color/textTmp2"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/dash_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/def_white_small_corner_selector"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="delete">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="17dp"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/ic_tras_can"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginBorder"
+                android:text="删  除"
+                android:textColor="@color/textTmp2"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/dash_line"/>
+
+        <LinearLayout
+            android:id="@+id/recall"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/def_white_small_corner_selector"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="recall">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="17dp"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/ic_60"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginBorder"
+                android:text="撤  回"
+                android:textColor="@color/textTmp2"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

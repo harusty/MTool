@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingLeft="@dimen/marginBorder"
+        android:paddingRight="@dimen/marginBorder">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="自动关注我的粉丝"
+            android:textColor="@color/textTmp2"/>
+
+        <com.zzkx.mtool.view.customview.CustomSwitch
+            android:id="@+id/sw_attention_fan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingLeft="@dimen/marginBorder"
+        android:paddingRight="@dimen/marginBorder">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="允许粉丝发起聊天"
+            android:textColor="@color/textTmp2"/>
+
+        <com.zzkx.mtool.view.customview.CustomSwitch
+            android:id="@+id/sw_fan_talk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/marginBorder"
+        android:text="动  态"
+        android:textColor="@color/textTmp2"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingLeft="@dimen/marginBorder"
+        android:paddingRight="@dimen/marginBorder">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="不让陌生人查看我的动态"
+            android:textColor="@color/textTmp2"/>
+
+        <com.zzkx.mtool.view.customview.CustomSwitch
+            android:id="@+id/sw_disable_show_to_stranger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingLeft="@dimen/marginBorder"
+        android:paddingRight="@dimen/marginBorder">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="允许陌生人查看十条动态"
+            android:textColor="@color/textTmp2"/>
+
+        <com.zzkx.mtool.view.customview.CustomSwitch
+            android:id="@+id/sw_enable_show_state_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingLeft="@dimen/marginBorder"
+        android:paddingRight="@dimen/marginBorder">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="不让粉丝看我的动态"
+            android:textColor="@color/textTmp2"/>
+
+        <com.zzkx.mtool.view.customview.CustomSwitch
+            android:id="@+id/sw_disable_show_to_fan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingLeft="@dimen/marginBorder"
+        android:paddingRight="@dimen/marginBorder">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="订单评价同步到动态"
+            android:textColor="@color/textTmp2"/>
+
+        <com.zzkx.mtool.view.customview.CustomSwitch
+            android:id="@+id/sw_acynk_order_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+</LinearLayout>

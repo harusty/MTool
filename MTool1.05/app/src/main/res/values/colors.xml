@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF305E</color>
+    <color name="colorPrimaryDark">#dc2950</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="textHintColor">#B2B2B2</color>
+    <color name="textTmp">#4D4D4D</color>
+    <color name="textTmp2">#282828</color>
+    <color name="grayStroke">#f0f0f0</color>
+    <color name="grayStroke2">#e7e7e7</color>
+    <color name="white">#ffffff</color>
+    <color name="dividerColor">#E5E5E5</color>
+    <color name="blackTrans">#19000000</color>
+    <color name="blackTrans2">#7d000000</color>
+    <color name="dartYellow">#FBB03B</color>
+    <color name="yellow">#FFD751</color>
+    <color name="darkBlue">#0071BB</color>
+    <color name="blue">#459DF5</color>
+    <color name="ligthBlue">#32CEBE</color>
+    <color name="windowBg">#f9f9f9</color>
+    <color name="windowBgDark">#f4f4f4</color>
+</resources>

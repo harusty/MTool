@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/marginBorder"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_section"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="超大杯"
+                android:textColor="@color/textTmp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:gravity="bottom">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rmb"
+                    android:textColor="@color/yellow"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tv_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20"
+                    android:textColor="@color/yellow"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_spec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="规格"
+            android:textColor="@color/textTmp"
+            android:visibility="invisible"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/marginBorder"
+            android:gravity="center|right">
+
+            <ImageView
+                android:id="@+id/iv_minus"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/def_white_selector"
+                android:paddingBottom="16dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="16dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_minus"/>
+
+            <TextView
+                android:id="@+id/tv_count"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/oval_gray"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/blue"/>
+
+            <ImageView
+                android:id="@+id/iv_plus"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/def_white_selector"
+                android:padding="10dp"
+                android:src="@mipmap/ic_blue_add"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+</LinearLayout>

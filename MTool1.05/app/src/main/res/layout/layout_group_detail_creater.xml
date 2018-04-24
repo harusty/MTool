@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginBorder"
+            android:layout_weight="1"
+            android:text="群聊名称"
+            android:textColor="@color/textTmp2"
+            android:textColorHighlight="@color/textTmp2"/>
+
+        <TextView
+            android:id="@+id/tv_group_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="群聊名称"
+            android:textColor="@color/textHintColor"/>
+
+        <ImageView
+            android:id="@+id/iv_edit_group_name"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/def_white_circle_selector"
+            android:padding="5dp"
+            android:src="@mipmap/ic_edit"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginBorder"
+            android:layout_weight="1"
+            android:text="群公告"
+            android:textColor="@color/textTmp2"
+            android:textColorHighlight="@color/textTmp2"/>
+
+
+        <ImageView
+            android:id="@+id/iv_edit_group_notice"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/def_white_circle_selector"
+            android:padding="5dp"
+            android:src="@mipmap/ic_edit"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginBorder"
+            android:layout_weight="1"
+            android:text="关闭提示音"
+            android:textColor="@color/textTmp2"
+            android:textColorHighlight="@color/textTmp2"/>
+
+        <com.zzkx.mtool.view.customview.CustomSwitch
+            android:id="@+id/switch_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/marginBorder"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+    <TextView
+        android:id="@+id/tv_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/def_white_selector"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/marginBorder"
+        android:text="转让该群"
+        android:textColor="@color/textTmp2"/>
+
+    <include layout="@layout/divider"/>
+
+    <TextView
+        android:id="@+id/tv_delete"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/def_white_selector"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/marginBorder"
+        android:text="删除该群"
+        android:textColor="@color/textTmp2"/>
+
+    <include layout="@layout/divider"/>
+
+</LinearLayout>

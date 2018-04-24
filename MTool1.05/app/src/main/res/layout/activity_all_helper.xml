@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_order_helper"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/def_white_selector"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/marginBorder">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_order_helper"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="订单助手"
+            android:textColor="@color/textTmp2"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+
+
+    <LinearLayout
+        android:id="@+id/layout_state_helper"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/def_white_selector"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/marginBorder"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_weight="0.00"
+            android:src="@mipmap/ic_state_helper"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="动态助手"
+            android:textColor="@color/textTmp2"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+</LinearLayout>

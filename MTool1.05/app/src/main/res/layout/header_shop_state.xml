@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingLeft="@dimen/marginBorder"
+        android:paddingRight="@dimen/marginBorder">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/marginBorder"
+            android:layout_marginTop="@dimen/marginBorder"
+            android:gravity="center">
+
+            <com.zzkx.mtool.view.customview.CircleImageView
+                android:id="@+id/iv_shop_logo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+            <TextView
+                android:id="@+id/tv_shop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:textColor="@color/textTmp2"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/marginBorder"
+            android:textColor="@color/textTmp2"
+            android:textSize="12sp"/>
+
+        <include layout="@layout/divider"/>
+
+        <TextView
+            android:id="@+id/tv_cancle_attention"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="@dimen/marginBorder"
+            android:layout_marginRight="@dimen/marginBorder"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_smallcorner_white_gray"
+            android:gravity="center"
+            android:text="取消关注"
+            android:textColor="@color/textHintColor"/>
+
+        <TextView
+            android:id="@+id/tv_to_shop"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="@dimen/marginBorder"
+            android:layout_marginRight="@dimen/marginBorder"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_red_empty_corner"
+            android:gravity="center"
+            android:text="进店逛逛"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/tv_attention"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="@dimen/marginBorder"
+            android:layout_marginRight="@dimen/marginBorder"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_red_empty_corner"
+            android:gravity="center"
+            android:text="关注店铺"
+            android:textColor="@color/colorPrimary"/>
+
+    </LinearLayout>
+</FrameLayout>

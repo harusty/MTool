@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"/>
+
+    <LinearLayout
+        android:id="@+id/layout_swip_city"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape_bigcorner_white_gray"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/swip_city_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLength="4"
+            android:singleLine="true"
+            android:textColor="@color/textTmp"/>
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="4.3dp"
+            android:layout_marginLeft="3dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_arrow_down"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_search"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape_bigcorner_white_gray"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@mipmap/ic_zoom"/>
+
+        <EditText
+            android:id="@+id/search_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:hint="@string/mainSearchHint"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textColorHint="@color/textHintColor"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/right_container"
+        android:layout_width="@dimen/rightMenuWidth"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/layout_search"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <View
+            android:id="@+id/icon_eye"
+            style="@style/RightmMenuButton"
+            android:background="@mipmap/ic_eye"/>
+
+        <View
+            android:id="@+id/icon_list"
+            style="@style/RightmMenuButton"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/ic_list"/>
+
+        <RelativeLayout
+            android:id="@+id/layout_locate"
+            style="@style/RightmMenuButton"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/ic_locate_empty">
+
+            <ProgressBar
+                android:id="@+id/locate_pb"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:visibility="visible"/>
+
+            <View
+                android:id="@+id/icon_locate"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/selector_locate_icon"
+                android:src="@mipmap/ic_eye"
+                android:visibility="visible"/>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/shop_pager"
+        android:layout_width="match_parent"
+        android:layout_height="148dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"/>
+</RelativeLayout>

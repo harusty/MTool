@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <com.zzkx.mtool.view.customview.RoundImageView
+            android:id="@+id/iv_shop_logo"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_shop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="XXX特惠"
+                android:textColor="@color/textTmp2"
+                android:textSize="12sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rmb"
+                    android:textColor="@color/yellow"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tv_shop_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="98"
+                    android:textColor="@color/yellow"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="15dp"
+            android:layout_height="8dp"
+            android:layout_marginRight="30dp"
+            android:src="@mipmap/ic_arrow_blue_down"/>
+
+        <ImageView
+            android:id="@+id/iv_check"
+            android:layout_width="30dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_height="12dp"
+            android:src="@mipmap/ic_check_harf"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+</LinearLayout>

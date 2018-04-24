@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/image_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/marginBorder"
+        android:paddingRight="@dimen/marginBorder"
+        android:paddingTop="@dimen/marginBorder"
+        android:weightSum="3">
+
+        <com.zzkx.mtool.view.customview.FrameLayout1_1w
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <com.zzkx.mtool.view.customview.RoundImageView1_1W
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible">
+
+                <com.aries.ui.view.radius.RadiusFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:rv_backgroundColor="@color/blackTrans2"
+                    app:rv_radius="3dp"/>
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:background="@mipmap/ic_13"/>
+            </RelativeLayout>
+
+        </com.zzkx.mtool.view.customview.FrameLayout1_1w>
+
+
+        <com.zzkx.mtool.view.customview.FrameLayout1_1w
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1">
+
+            <com.zzkx.mtool.view.customview.RoundImageView1_1W
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible">
+
+                <com.aries.ui.view.radius.RadiusFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:rv_backgroundColor="@color/blackTrans2"
+                    app:rv_radius="3dp"/>
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:background="@mipmap/ic_13"/>
+            </RelativeLayout>
+        </com.zzkx.mtool.view.customview.FrameLayout1_1w>
+
+        <com.zzkx.mtool.view.customview.FrameLayout1_1w
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1">
+
+            <com.zzkx.mtool.view.customview.RoundImageView1_1W
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible">
+
+                <com.aries.ui.view.radius.RadiusFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:rv_backgroundColor="@color/blackTrans2"
+                    app:rv_radius="3dp"/>
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:background="@mipmap/ic_13"/>
+            </RelativeLayout>
+        </com.zzkx.mtool.view.customview.FrameLayout1_1w>
+    </LinearLayout>
+</LinearLayout>

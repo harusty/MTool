@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:paddingRight="@dimen/marginBorder"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingBottom="20dp"
+        android:paddingLeft="@dimen/marginBorder"
+        android:paddingTop="20dp"
+        android:text="12341234"
+        android:textColor="@color/textTmp2"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/layout_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="11dp"
+            android:layout_height="11dp"
+            android:src="@mipmap/ic_zoom_menu"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="查看更多"
+            android:textColor="@color/textHintColor"
+            android:textSize="10sp"/>
+    </LinearLayout>
+</LinearLayout>

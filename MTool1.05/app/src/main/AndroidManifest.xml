@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.zzkx.mtool">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <!--EaseChat-->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.hyphenate.chatuidemo.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <!--<permission-->
+    <!--android:searchName="com.hyphenate.chatuidemo.permission.C2D_MESSAGE"-->
+    <!--android:protectionLevel="signature"/>-->
+
+
+    <!--<permission-->
+    <!--android:searchName="com.hyphenate.chatuidemo.permission.MIPUSH_RECEIVE"-->
+    <!--android:protectionLevel="signatureOrSystem"/>-->
+
+    <!--<uses-permission android:searchName="com.hyphenate.chatuidemo.permission.MIPUSH_RECEIVE"/>-->
+
+    <!--EaseChat-->
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_menu"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:name">
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="4caea515394d47b54ce129088a483b26"/>
+        <!-- 定位需要的服务 使用2.0的定位需要加上这个 -->
+        <service android:name="com.amap.api.location.APSService"/>
+
+        <activity android:name=".view.activity.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data android:scheme="wx1ccb336f561e993d"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+        </activity>
+        <activity
+            android:name=".view.activity.NormalSettingActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.ArticleActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.ShareStateActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.SystemNotiActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.ShopCommentDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.QuestionActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.ServiceCenterActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.FeedBackActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.AboutActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.MToolShareActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".chat.ui.ComplainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.LocateShareMapActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".CrashInfoActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.AddCardActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.BillActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.WithDrawActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.ChargeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.MyWalleteActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.OrderRemarkActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.OrderDetailMapDelivActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.H5ShowActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.ShopStateActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.BusinessPartner"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.GroupMemberManageActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.zzkx.mtool.chat.ui.GroupDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.FriendListTagSelectActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.StateImgActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.ContactSelectActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.ContactTagDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.TagsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.AttentionListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.AttentionActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.VideoPlayerAcitivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.FriendSearchActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.AllMsgResultActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.StateHelperActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.MessageSearchActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.StateShowSettingActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.PrivacySettingActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.NotificationSettingActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.CollectionSearchActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.OrderSearchActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.AccountSafetyActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.StateSearchActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.StateCollectionListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.CategoryNameEditActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.ScanActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.MyStateActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.SupposedAvtivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.ShopCollectionListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.MenuCollectionListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.CollectActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.UserInfoActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.PasswordRestActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.MessageCodeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.AllSupportedUserActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.StateDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.FoodSingleEnvaluateActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.PublishStateActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name=".view.activity.AllHelperActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.UserSettingActvity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.UserDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.PicturePreviewActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.OrderEnvaluateActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.FriendListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.SearchHistoryActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.NearByShopActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.SearchFoodShopActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.OrderDetailMapActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.HistorOrderListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.ShopDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.OrderDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.OrderHelperActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.RegisteActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.LoginActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.AddressLocateActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustNothing"/>
+        <activity
+            android:name=".view.activity.AddressEditActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.AddressListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.CartActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.MenuDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.MineActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.CityChangeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.ShopListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.ShopActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoDisplay"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <!--***********************************EaseChat*****************************************-->
+        <!--***********************************EaseChat*****************************************-->
+        <!--***********************************EaseChat*****************************************-->
+        <!-- 设置环信应用的appkey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="1111161226178806#mtool"/>
+        <!-- 声明sdk所需的service -->
+        <service
+            android:name="com.hyphenate.chat.EMChatService"
+            android:exported="true"
+            tools:ignore="ExportedService"/>
+        <service
+            android:name="com.hyphenate.chat.EMJobService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE"/>
+
+        <!-- 声明sdk所需的receiver -->
+        <receiver android:name="com.hyphenate.chat.EMMonitorReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+
+                <data android:scheme="package"/>
+            </intent-filter>
+            <!-- 可选filter -->
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+        <!-- 开机自启动服务 -->
+        <!--<receiver android:searchName=".receiver.StartServiceReceiver">-->
+        <!--<intent-filter android:priority="1000">-->
+        <!--<action android:searchName="android.intent.action.BOOT_COMPLETED" />-->
+        <!--<action android:searchName="android.intent.action.QUICKBOOT_POWERON" />-->
+
+        <!--<category android:searchName="android.intent.category.LAUNCHER" />-->
+        <!--</intent-filter>-->
+        <!--</receiver>-->
+        <activity
+            android:name=".chat.ui.EaseMainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            />
+        <!-- 聊天页面 -->
+        <activity
+            android:name="com.zzkx.mtool.chat.ui.ChatActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+        <!-- 添加好友 -->
+        <activity
+            android:name="com.zzkx.mtool.chat.ui.AddContactActivity"
+            android:screenOrientation="portrait"
+
+            android:windowSoftInputMode="stateVisible"/>
+        <!-- 群组详情 -->
+        <activity
+            android:name="com.zzkx.mtool.chat.ui.EmGroupDetailsActivity"
+            android:screenOrientation="portrait"
+            />
+        <!-- 群组列表 -->
+        <activity
+            android:name="com.zzkx.mtool.chat.ui.GroupsActivity"
+            android:screenOrientation="portrait"
+
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 聊天室详情 -->
+        <activity
+            android:name="com.zzkx.mtool.chat.ui.ChatRoomDetailsActivity"
+            android:screenOrientation="portrait"
+            />
+        <!-- 新建聊天室 -->
+        <activity
+            android:name="com.zzkx.mtool.chat.ui.NewChatRoomActivity"
+            android:screenOrientation="portrait"
+
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 新建群组 -->
+        <activity
+            android:name="com.zzkx.mtool.chat.ui.NewGroupActivity"
+            android:screenOrientation="portrait"
+
+            android:windowSoftInputMode="adjustPan"/>
+        <!-- 退出群组提示框 -->
+        <activity
+            android:name="com.zzkx.mtool.chat.ui.ExitGroupDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom"/>
+        <!-- 群组选人 -->
+        <activity
+            android:name="com.zzkx.mtool.chat.ui.GroupPickContactsActivity"
+            android:screenOrientation="portrait"
+
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="com.zzkx.mtool.chat.ui.PickAtUserActivity"
+            android:screenOrientation="portrait"
+            />
+        <!-- 地图 -->
+        <activity
+            android:name="com.hyphenate.easeui.ui.EaseBaiduMapActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <!-- 新的朋友邀请消息页面 -->
+        <activity
+            android:name="com.zzkx.mtool.chat.ui.NewFriendsMsgActivity"
+            android:screenOrientation="portrait"
+            />
+        <!-- 转发消息用户列表页面 -->
+        <activity
+            android:name="com.zzkx.mtool.chat.ui.ForwardMessageActivity"
+            android:screenOrientation="portrait"
+
+            android:windowSoftInputMode="adjustPan"/>
+        <!-- 自定义的contextmenu -->
+        <activity
+            android:name="com.zzkx.mtool.chat.ui.ContextMenuActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyle"/>
+        <!-- 显示下载大图页面 -->
+        <activity
+            android:name="com.hyphenate.easeui.ui.EaseShowBigImageActivity"
+            android:screenOrientation="portrait"
+            />
+        <!-- 下载文件 -->
+        <activity
+            android:name="com.hyphenate.easeui.ui.EaseShowNormalFileActivity"
+            android:screenOrientation="portrait"
+            />
+        <!-- 黑名单 -->
+        <activity
+            android:name="com.zzkx.mtool.chat.ui.BlacklistActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <!-- 公开的群聊列表 -->
+        <activity
+            android:name="com.zzkx.mtool.chat.ui.PublicGroupsActivity"
+            android:screenOrientation="portrait"
+
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="com.zzkx.mtool.chat.ui.PublicChatRoomsActivity"
+            android:screenOrientation="portrait"
+
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 语音通话 -->
+        <activity
+            android:name="com.zzkx.mtool.chat.ui.VoiceCallActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/TrasluentTheme"/>
+        <!-- 视频通话 -->
+        <activity
+            android:name="com.zzkx.mtool.chat.ui.VideoCallActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            />
+        <!-- 群聊简单信息 -->
+        <activity
+            android:name="com.zzkx.mtool.chat.ui.GroupSimpleDetailActivity"
+            android:screenOrientation="portrait"
+            />
+        <!-- 群组黑名单用户列表 -->
+        <activity
+            android:name="com.zzkx.mtool.chat.ui.GroupBlacklistActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.zzkx.mtool.chat.ui.GroupSearchMessageActivity"
+            android:screenOrientation="portrait"
+
+            android:windowSoftInputMode="stateVisible"/>
+        <activity
+            android:name="com.zzkx.mtool.chat.ui.PublicGroupsSeachActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.zzkx.mtool.chat.ui.EditActivity"
+            android:screenOrientation="portrait"
+
+            android:windowSoftInputMode="stateVisible"/>
+        <activity
+            android:name="com.zzkx.mtool.chat.ui.SharedFilesActivity"
+            android:screenOrientation="portrait"
+
+            />
+        <activity
+            android:name="com.hyphenate.easeui.ui.EaseShowVideoActivity"
+            android:screenOrientation="portrait"
+
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <!-- choose video -->
+        <activity
+            android:name="com.zzkx.mtool.chat.ui.ImageGridActivity"
+            android:screenOrientation="portrait"
+
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name="com.zzkx.mtool.chat.ui.RecorderVideoActivity"
+            android:screenOrientation="portrait"
+
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <!-- upload error log -->
+        <activity
+            android:name="com.zzkx.mtool.chat.ui.DiagnoseActivity"
+            android:screenOrientation="portrait"
+
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name="com.zzkx.mtool.chat.ui.MultiDeviceActivity"
+            android:screenOrientation="portrait"
+
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name="com.zzkx.mtool.chat.ui.NamePasswordActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <!-- iOS offline push nick -->
+        <activity
+            android:name="com.zzkx.mtool.chat.ui.OfflinePushNickActivity"
+            android:screenOrientation="portrait"
+
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <!-- robots list -->
+        <activity
+            android:name="com.zzkx.mtool.chat.ui.RobotsActivity"
+            android:screenOrientation="portrait"
+
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <!-- user profile -->
+        <activity
+            android:name="com.zzkx.mtool.chat.ui.UserProfileActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.zzkx.mtool.chat.ui.SetServersActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.zzkx.mtool.chat.ui.OfflinePushSettingsActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.zzkx.mtool.chat.ui.CallOptionActivity"
+            android:screenOrientation="portrait"
+            />
+        <!--***********************************EaseChat End*****************************************-->
+        <!--***********************************EaseChat End*****************************************-->
+        <!--***********************************EaseChat End*****************************************-->
+    </application>
+
+</manifest>

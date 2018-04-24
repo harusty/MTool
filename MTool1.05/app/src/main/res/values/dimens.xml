@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mainNavTabHeight">60dp</dimen>
+    <dimen name="mainTabImgSize">30dp</dimen>
+    <dimen name="titleHeight">55dp</dimen>
+    <dimen name="rightMenuWidth">56dp</dimen>
+    <dimen name="rightMenuHeight">45dp</dimen>
+    <dimen name="filterItemHeigh">40dp</dimen>
+    <dimen name="marginBorder">16dp</dimen>
+    <dimen name="shopBottomLayoutHeigh">40dp</dimen>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="@dimen/marginBorder"
+        android:background="@drawable/shape_smallcorner_white_gray"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginBorder"
+            android:layout_weight="1"
+            android:text="好友标签1"
+            android:textColor="@color/textTmp2"/>
+
+        <com.zzkx.mtool.view.customview.RectChekBox
+            android:id="@+id/checkbox"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="@dimen/marginBorder"
+            android:padding="6dp"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider"/>
+</LinearLayout>

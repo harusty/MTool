@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/title_layout"/>
+
+
+    <com.zzkx.mtool.view.customview.scrollablelayout.ScrollableLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/scrolable_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_layout"
+        android:orientation="vertical">
+
+
+        <include layout="@layout/layout_shop_info"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/shopBottomLayoutHeigh"
+            android:layout_weight="1"
+            android:background="@color/white"/>
+    </com.zzkx.mtool.view.customview.scrollablelayout.ScrollableLayout>
+
+    <include layout="@layout/layout_shop_bottom"/>
+</RelativeLayout>

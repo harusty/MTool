@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical">
+
+    <com.aries.ui.view.radius.RadiusFrameLayout
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        app:rv_radius="20dp"
+        app:rv_backgroundColor="#CCCCCC"
+        android:layout_centerVertical="true"
+        android:background="@drawable/shape_bigcorner_main"/>
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/shape_bigcorner_white_gray"
+        android:gravity="center"
+        android:text="否"
+        android:textColor="@color/textTmp2"/>
+</RelativeLayout>

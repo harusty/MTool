@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <com.zzkx.mtool.view.customview.RoundImageView1_1W
+            android:id="@+id/iv_head"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/marginBorder"
+            android:src="@color/gray_normal"/>
+
+        <View
+            android:id="@+id/pot"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="-7dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/iv_head"
+            android:background="@drawable/oval_msg"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_head"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_section"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="啊啊啊"
+                android:textColor="@color/textTmp2"/>
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/textHintColor"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/marginBorder"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/textHintColor"
+            android:textSize="10sp"/>
+    </RelativeLayout>
+
+    <include layout="@layout/divider"/>
+</LinearLayout>

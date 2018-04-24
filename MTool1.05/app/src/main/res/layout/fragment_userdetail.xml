@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zzkx.mtool.view.customview.scrollablelayout.ScrollableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sr_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_user_detaill"/>
+
+    <ListView
+        android:id="@+id/lv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:overScrollMode="never"/>
+</com.zzkx.mtool.view.customview.scrollablelayout.ScrollableLayout>

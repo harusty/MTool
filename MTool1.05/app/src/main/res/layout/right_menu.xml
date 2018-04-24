@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/right_container"
+    android:layout_width="56dp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/icon_eye"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@mipmap/ic_eye"
+        android:src="@mipmap/ic_eye"/>
+
+    <View
+        android:id="@+id/icon_list"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/ic_list"
+        android:src="@mipmap/ic_eye"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_locate"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/ic_locate_empty">
+
+        <View
+            android:id="@+id/icon_locate"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/selector_locate_icon"
+            android:src="@mipmap/ic_eye"/>
+
+        <ProgressBar
+            android:id="@+id/locate_pb"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingBottom="@dimen/marginBorder">
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:background="@color/blue"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/marginBorder"
+            android:text="外送：肯德基"
+            android:textColor="@color/textTmp"/>
+
+        <include layout="@layout/divider"/>
+
+        <LinearLayout
+            android:id="@+id/layout_option"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginBorder"
+                android:layout_weight="1"
+                android:text="@string/distributeOption"
+                android:textColor="@color/blue"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_option_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="立即：配送费XX元"
+                android:textColor="@color/textHintColor"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="4.5dp"
+                android:paddingBottom="8.5dp"
+                android:paddingLeft="11.5dp"
+                android:paddingRight="11.5dp"
+                android:paddingTop="8.5dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_arr_gray_right"/>
+        </LinearLayout>
+
+        <include layout="@layout/divider"/>
+
+        <com.zzkx.mtool.view.customview.ExpandableView
+            android:id="@+id/layout_option_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/marginBorder">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginBorder"
+                    android:layout_weight="1"
+                    android:text="@string/rightNow"
+                    android:textColor="@color/textTmp"/>
+
+                <TextView
+                    android:id="@+id/tv_option_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="配送费：XX元"
+                    android:textColor="@color/textHintColor"/>
+
+                <com.zzkx.mtool.view.customview.CartChekBox
+                    android:id="@+id/cb1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="7.5dp"
+                    android:background="@drawable/def_white_selector"
+                    android:paddingBottom="9dp"
+                    android:paddingLeft="7.5dp"
+                    android:paddingRight="7.5dp"
+                    android:paddingTop="9dp"/>
+            </LinearLayout>
+
+            <include layout="@layout/divider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginBorder"
+                    android:layout_weight="1"
+                    android:text="@string/timming"
+                    android:textColor="@color/textTmp"/>
+
+                <TextView
+                    android:id="@+id/tv_alarm_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="17.09.5 18:30"
+                    android:textColor="@color/textHintColor"/>
+
+                <ImageView
+                    android:id="@+id/iv_alarm_setting"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:padding="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_edit"/>
+
+                <com.zzkx.mtool.view.customview.CartChekBox
+                    android:id="@+id/cb2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="7.5dp"
+                    android:background="@drawable/def_white_selector"
+                    android:paddingBottom="9dp"
+                    android:paddingLeft="7.5dp"
+                    android:paddingRight="7.5dp"
+                    android:paddingTop="9dp"/>
+            </LinearLayout>
+
+            <include layout="@layout/divider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginBorder"
+                    android:layout_weight="1"
+                    android:text="@string/self"
+                    android:textColor="@color/textTmp"/>
+
+                <TextView
+                    android:id="@+id/tv_pick_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="17.09.5 18:30"
+                    android:textColor="@color/textHintColor"/>
+
+                <ImageView
+                    android:id="@+id/iv_pick_time_setting"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:padding="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_edit"/>
+
+                <com.zzkx.mtool.view.customview.CartChekBox
+                    android:id="@+id/cb3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="7.5dp"
+                    android:background="@drawable/def_white_selector"
+                    android:paddingBottom="9dp"
+                    android:paddingLeft="7.5dp"
+                    android:paddingRight="7.5dp"
+                    android:paddingTop="9dp"/>
+            </LinearLayout>
+
+            <include layout="@layout/divider"/>
+        </com.zzkx.mtool.view.customview.ExpandableView>
+
+        <LinearLayout
+            android:id="@+id/layout_order_detail"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginBorder"
+                android:layout_weight="1"
+                android:text="@string/orderDetail"
+                android:textColor="@color/blue"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_shop_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="合计：XX元"
+                android:textColor="@color/textHintColor"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="4.5dp"
+                android:paddingBottom="8.5dp"
+                android:paddingLeft="11.5dp"
+                android:paddingRight="11.5dp"
+                android:paddingTop="8.5dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_arr_gray_right"/>
+        </LinearLayout>
+
+        <include layout="@layout/divider"/>
+
+        <com.zzkx.mtool.view.customview.ExpandableView
+            android:id="@+id/order_list_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/marginBorder">
+
+            <include layout="@layout/item_order_simple"/>
+        </com.zzkx.mtool.view.customview.ExpandableView>
+
+
+        <LinearLayout
+            android:id="@+id/layout_remark"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginBorder"
+                android:layout_weight="1"
+                android:text="@string/setComment"
+                android:textColor="@color/blue"
+                android:textStyle="bold"/>
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="4.5dp"
+                android:paddingBottom="8.5dp"
+                android:paddingLeft="11.5dp"
+                android:paddingRight="11.5dp"
+                android:paddingTop="8.5dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_arr_gray_right"/>
+        </LinearLayout>
+
+        <include layout="@layout/divider"/>
+    </LinearLayout>
+</LinearLayout>

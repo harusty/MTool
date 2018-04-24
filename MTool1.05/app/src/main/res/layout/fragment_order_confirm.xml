@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_cart_top"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white">
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="@dimen/marginBorder"
+                        android:gravity="center"
+                        android:text="@string/addIfo"
+                        android:textColor="@color/textTmp"/>
+
+                    <include layout="@layout/divider"/>
+
+                    <include
+                        android:id="@+id/layout_select_add_info"
+                        layout="@layout/item_add_info"/>
+
+                    <com.zzkx.mtool.view.customview.ExpandableView
+                        android:id="@+id/add_info_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginBorder"
+                android:background="@color/white">
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/layout_paytype"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/marginBorder"
+                            android:layout_weight="1"
+                            android:text="@string/payType"
+                            android:textColor="@color/textTmp"/>
+
+                        <TextView
+                            android:id="@+id/tv_pay_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="微信支付"
+                            android:textColor="@color/textHintColor"/>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="10dp"
+                            android:padding="5dp"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/ic_edit"/>
+
+                    </LinearLayout>
+
+                    <include layout="@layout/divider"/>
+
+                    <com.zzkx.mtool.view.customview.ExpandableView
+                        android:id="@+id/paytype_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/layout_yue"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/marginBorder"
+                                android:layout_weight="1"
+                                android:text="@string/smallChange"
+                                android:textColor="@color/textTmp"/>
+
+                            <TextView
+                                android:id="@+id/tv_yue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/textHintColor"/>
+
+                            <com.zzkx.mtool.view.customview.CartChekBox
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginRight="7.5dp"
+                                android:paddingBottom="9dp"
+                                android:paddingLeft="7.5dp"
+                                android:paddingRight="7.5dp"
+                                android:paddingTop="9dp"/>
+                        </LinearLayout>
+
+                        <include layout="@layout/divider"/>
+
+                        <LinearLayout
+                            android:id="@+id/layout_wechat"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/marginBorder"
+                                android:layout_weight="1"
+                                android:text="@string/wechatPay"
+                                android:textColor="@color/textTmp"/>
+
+                            <com.zzkx.mtool.view.customview.CartChekBox
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginRight="7.5dp"
+                                android:paddingBottom="9dp"
+                                android:paddingLeft="7.5dp"
+                                android:paddingRight="7.5dp"
+                                android:paddingTop="9dp"/>
+                        </LinearLayout>
+
+                        <include layout="@layout/divider"/>
+
+                        <LinearLayout
+                            android:id="@+id/layout_ali"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/marginBorder"
+                                android:layout_weight="1"
+                                android:text="@string/aliPay"
+                                android:textColor="@color/textTmp"/>
+
+                            <com.zzkx.mtool.view.customview.CartChekBox
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginRight="7.5dp"
+                                android:paddingBottom="9dp"
+                                android:paddingLeft="7.5dp"
+                                android:paddingRight="7.5dp"
+                                android:paddingTop="9dp"/>
+                        </LinearLayout>
+
+                        <include layout="@layout/divider"/>
+                    </com.zzkx.mtool.view.customview.ExpandableView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/order_menu_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginBorder"
+                android:orientation="vertical"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/windowBg">
+
+        <TextView
+            android:id="@+id/tv_go_pay"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/marginBorder"
+            android:layout_marginRight="@dimen/marginBorder"
+            android:background="@drawable/selector_red_empty_corder"
+            android:gravity="center"
+            android:text="@string/goPay"
+            android:textColor="@color/colorPrimary"/>
+    </RelativeLayout>
+</LinearLayout>
